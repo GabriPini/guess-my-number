@@ -27,7 +27,8 @@ document.querySelector('.check').addEventListener('click', function () {
     if (realScore > 1) {
       /*  document.querySelector('.message').textContent = '🥳 Correct Number!'; */
       displayMessage('🥳 Correct Number!');
-      document.querySelector('body').style.backgroundColor = '#60b347';
+      document.querySelector('body').style.backgroundImage =
+        'linear-gradient(-60deg, #ff5858 0%, #f09819 100%)';
       document.querySelector('.number').style.width = '30rem';
       document.querySelector('.number').textContent = secretNumber;
 
@@ -70,7 +71,8 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.score').textContent = realScore;
   /*   document.querySelector('.message').textContent = 'Start guessing...'; */
   displayMessage('Start guessing...');
-  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('body').style.backgroundImage =
+    ' linear-gradient(to right, #434343 0%, black 100%)';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
